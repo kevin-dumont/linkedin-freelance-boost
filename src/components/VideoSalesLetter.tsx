@@ -7,6 +7,14 @@ const VideoSalesLetter: React.FC = () => {
     <section className="py-12 md:py-20 bg-background">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Découvrez Comment Transformer Votre Vie
+            </h1>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Regardez cette vidéo qui va changer votre perspective
+            </p>
+          </div>
           <Card className="overflow-hidden shadow-lg">
             <div className="aspect-video w-full relative bg-muted flex items-center justify-center">
               {/* Video placeholder - replace with actual video embed code */}
