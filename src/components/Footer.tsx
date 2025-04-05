@@ -6,19 +6,14 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background py-12 border-t border-border/30">
+    <footer className="bg-background py-12 border-t border-border">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <div className="mb-6 md:mb-0 flex items-center gap-2">
-            <img 
-              src="/lovable-uploads/bf00ddef-9e7d-4d37-b232-35a5a9318c02.png" 
-              alt="Kevin Dumont Logo" 
-              className="h-8 w-auto"
-            />
+          <div className="mb-6 md:mb-0">
             <span className="text-xl font-heading font-bold gradient-text">
               Kevin Dumont
             </span>
-            <p className="text-foreground/70 ml-2">
+            <p className="text-foreground/70 mt-1">
               Expert LinkedIn pour développeurs freelance
             </p>
           </div>
@@ -42,7 +37,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <Separator className="bg-border/30 mb-8" />
+        <Separator className="bg-border mb-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/60 text-sm mb-4 md:mb-0">

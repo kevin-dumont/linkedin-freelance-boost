@@ -12,14 +12,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 border-b border-border/30 backdrop-blur-sm bg-background/95 sticky top-0 z-50">
+    <header className="py-4 border-b border-border sticky top-0 z-50 bg-background">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <img 
-            src="/lovable-uploads/bf00ddef-9e7d-4d37-b232-35a5a9318c02.png" 
-            alt="Kevin Dumont Logo" 
-            className="h-8 w-auto"
-          />
           <span className="text-xl font-heading font-bold gradient-text">
             Kevin Dumont
           </span>

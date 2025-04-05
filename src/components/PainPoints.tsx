@@ -17,7 +17,7 @@ const PainPoints: React.FC = () => {
   ];
 
   return (
-    <section id="pain-points" className="section bg-secondary/30 py-20">
+    <section id="pain-points" className="section bg-secondary py-20">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Tu te reconnais là-dedans ?
