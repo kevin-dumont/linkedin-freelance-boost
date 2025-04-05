@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/components/ui/use-toast';
+import { Send } from 'lucide-react';
 
 const CTA: React.FC = () => {
   const { toast } = useToast();
@@ -44,12 +45,13 @@ const CTA: React.FC = () => {
 
   return (
     <section id="contact" className="section relative pb-24">
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/0201664b-f32d-41c0-acef-6459c7ba7d11.png')] bg-cover bg-center opacity-5 -z-10"></div>
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[150px] -z-10"></div>
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Prêt à transformer ton profil LinkedIn en{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+            <span className="gradient-text">
               machine à clients
             </span>
             ?
@@ -60,7 +62,7 @@ const CTA: React.FC = () => {
           </p>
         </div>
         
-        <Card className="blur-card border-border/30 max-w-2xl mx-auto">
+        <Card className="blur-card max-w-2xl mx-auto">
           <CardContent className="p-6 md:p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-4">
@@ -73,7 +75,7 @@ const CTA: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="bg-secondary/50"
+                    className="bg-secondary/40"
                   />
                 </div>
                 
@@ -87,7 +89,7 @@ const CTA: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="bg-secondary/50"
+                    className="bg-secondary/40"
                   />
                 </div>
                 
@@ -100,7 +102,7 @@ const CTA: React.FC = () => {
                     value={formData.linkedin}
                     onChange={handleChange}
                     required
-                    className="bg-secondary/50"
+                    className="bg-secondary/40"
                   />
                 </div>
                 
@@ -113,13 +115,13 @@ const CTA: React.FC = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="bg-secondary/50"
+                    className="bg-secondary/40"
                   />
                 </div>
               </div>
               
-              <Button type="submit" className="w-full py-6 text-lg bg-primary hover:bg-primary/90">
-                Je postule à l'accompagnement
+              <Button type="submit" className="w-full py-6 text-lg bg-primary hover:bg-primary/90 gap-2">
+                Je postule à l'accompagnement <Send size={18} />
               </Button>
               
               <p className="text-center text-sm text-muted-foreground">

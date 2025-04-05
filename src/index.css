@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 220 14% 10%;
-    --foreground: 220 10% 98%;
+    --background: 240 14% 10%;
+    --foreground: 0 0% 98%;
     
-    --card: 220 14% 13%;
-    --card-foreground: 220 10% 98%;
+    --card: 240 14% 12%;
+    --card-foreground: 0 0% 98%;
     
-    --popover: 220 14% 10%;
-    --popover-foreground: 220 10% 98%;
+    --popover: 240 14% 10%;
+    --popover-foreground: 0 0% 98%;
     
-    --primary: 220 85% 57%;
-    --primary-foreground: 220 10% 98%;
+    --primary: 230 73% 66%;
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 220 10% 20%;
-    --secondary-foreground: 220 10% 98%;
+    --secondary: 240 10% 15%;
+    --secondary-foreground: 0 0% 98%;
     
-    --muted: 220 10% 15%;
-    --muted-foreground: 220 10% 70%;
+    --muted: 240 10% 15%;
+    --muted-foreground: 0 0% 70%;
     
-    --accent: 220 85% 57%;
-    --accent-foreground: 220 10% 98%;
+    --accent: 230 73% 66%;
+    --accent-foreground: 0 0% 98%;
     
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 220 10% 98%;
+    --destructive-foreground: 0 0% 98%;
     
-    --border: 220 14% 20%;
-    --input: 220 14% 20%;
-    --ring: 220 85% 57%;
+    --border: 240 14% 18%;
+    --input: 240 14% 18%;
+    --ring: 230 73% 66%;
     
     --radius: 0.5rem;
   }
@@ -70,7 +70,7 @@
   }
 
   .blur-card {
-    @apply bg-card/70 backdrop-blur-sm border border-border/50;
+    @apply bg-card/80 backdrop-blur-sm border border-border/40 shadow-sm;
   }
 
   .highlight-text {
@@ -93,5 +93,9 @@
   .x-list li:before {
     content: "✘";
     @apply text-destructive font-bold flex-shrink-0 pt-0.5;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent;
   }
 }

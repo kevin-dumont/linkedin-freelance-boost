@@ -17,14 +17,14 @@ const PainPoints: React.FC = () => {
   ];
 
   return (
-    <section id="pain-points" className="section bg-muted py-20">
+    <section id="pain-points" className="section bg-secondary/30 py-20">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Tu te reconnais là-dedans ?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {painPoints.map((point, index) => (
-            <Card key={index} className="blur-card overflow-hidden border-border/30 h-full">
+            <Card key={index} className="blur-card h-full">
               <CardContent className="p-6 h-full flex flex-col">
                 <div className="flex-1">
                   <p className="text-foreground/90 mb-2 font-medium">
